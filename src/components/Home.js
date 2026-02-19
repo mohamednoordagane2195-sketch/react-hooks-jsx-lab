@@ -1,9 +1,15 @@
 import React from "react";
-import { name, city } from "../data/data.js";
+import { username, city, image } from "./user";
 
 function Home() {
-  // update the JSX being returned!
-  return <div>Home</div>;
+  return (
+    <div>
+      <h1>Home Component</h1>
+      <p>Username: {username}</p>
+      <p>City: {city}</p>
+      <img src={image} alt={username} />
+    </div>
+  );
 }
 
 export default Home;

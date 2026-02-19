@@ -1,8 +1,13 @@
 import React from "react";
-import { image } from "../data/data";
+import { username, city } from "./user";
 
 function About() {
-  return <div>About</div>;
+  return (
+    <div>
+      <h1>About Component</h1>
+      <p>{username} lives in {city}.</p>
+    </div>
+  );
 }
 
 export default About;
